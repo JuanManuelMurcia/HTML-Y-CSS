@@ -1,0 +1,71 @@
+*{
+    box-sizing: border-box;
+
+}
+
+html,body{ 
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+
+nav{
+    background-color: turquoise;
+    height: 3rem;
+}
+
+.container_body{
+    display: flex;
+    flex-flow: column;
+    height: 100%;
+    border: 1px solid red;
+}
+.container_main{
+    display: flex;
+    flex-flow: row;
+    height: 100%;
+    border: 1px solid red;
+}
+#index{
+    background-color: yellow;
+    width: 4rem;
+    height: 100%;
+}
+main{
+    height: 100%;
+    background-color: yellowgreen;
+    flex-grow: 1;
+}
+
+
+#shop{
+    background-color: grey;
+    height: 100%;
+    flex-grow: .4;
+}
+#shop h3{
+    margin: 0;
+}
+footer{
+    background-color: brown;
+    position: fixed;
+    bottom: 2rem;
+    
+}
+article{
+   
+    border: 2px solid black;
+    width: 10rem;
+    height: 14rem;
+    margin: 0.6rem;
+    background-color: white;
+    text-align: center;
+    
+ }
+
+ #products {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+}

@@ -2,24 +2,26 @@
     box-sizing: border-box;
 
 }
-
-html,body{ 
+ html,body{ 
     height: 100%;
     margin: 0;
     padding: 0;
+    /* border: 5px solid red; */
+} 
+
+body{
+    overflow: hidden;
 }
-
-
 nav{
     background-color: #00b19d;
-    height: 3rem;
+    height: 5vh;
 }
 #search{
     left: 55%;
 }
 #lupa{ 
 
-    width: 7%;
+    width: 4%;
     height: 4%;
     margin-top: 1%;
     margin-left: 1%;
@@ -40,33 +42,41 @@ nav{
     display: flex;
     flex-flow: column;
     height: 100%;
+    /* border: 5px solid blue; */
     /* border: 1px solid red; */
 }
 .container_main{
     display: flex;
     flex-flow: row;
-    height: calc(100%-3rem);
+    height: calc(100% - 5vh);
+    /* border: 5px solid black; */
     /* border: 1px solid red; */
 }
 #index{
     background-color: #ffffff;
-    width: 7%;
+    width: 6rem;
     height: 100%;
+    position: relative;
+    /* border: 5px solid orange; */
 }
 main{
     height: 100%;
     background-color: #E8ebf0;
-    flex-grow: 1;
+    flex: 1;
+    /* border: 5px solid yellow; */
+   
 }
 
 
 #shop{
-    background-color: white;
-    height: 100%;
-    width: 40%;
-    flex-grow: .4;
     display: flex;
     flex-flow: column;
+    background-color: white;
+    height: 100%;
+    flex: 0.4;
+    
+    overflow-y: scroll;
+    
 }
 #shop h3{
     margin: 0;
@@ -76,21 +86,27 @@ main{
     background-color: #809bb6;
 }
 footer{
-    background-color: #f5f5f5;
+    display: flex;
+    flex-flow: column;
+   
+    background-color: #E8ebf0;
     position: fixed;
     bottom: 0rem;
-    width: 100%;
+    width: 27vw;
+    height: 10%;
+    /* border: 1px solid red; */
 }
 article{
    
     border: 2px solid black;
-    width: 10rem;
-    height: 14rem;
+    width: 25rem;
+    height: 30rem;
     margin: 0.6rem;
     background-color: white;
     text-align: center;
-    border-radius: 5%;
     flex-wrap: wrap;
+    
+
     
  }
 
@@ -98,27 +114,81 @@ article{
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
-    
+    overflow: scroll;
+    height: 95%;
 }
 #cancel_sale{
     background-color: #809bb6;
+    margin: 1px;
+    width: 100%;
+    height: 50%;
+    
+    /* border: 5px solid yellow; */
+    /* margin: 10px; */
+
+}
+#cancel_sale button{
+    height: 98%;
+    width: 30%;
+    margin: 0.2px;
 }
 #sale_botton{
+
+    height: 50%;
     background-color: #00b19d;
+}
+#sale_botton button{
+    height: 98%;
+    width: 30%;
+    margin: 0.2px;
+    
 }
 .po{
     width: 98%;
-    height: 5%;
+    height: 9%;
     margin: 1%;
     margin-bottom: 1%;
     background-color: #00b19d;
     border: 0px solid;
 }
-article:hover {
+/* article:hover {
     transform: scale(1.1);
     -webkit-transition: all 0.5s 0s ease;
     -moz-transition: all 0.5s 0s ease;
     -o-transition: all 0.5s 0s ease;
     transition: all 0.5s 0s ease;
 
+}  */
+#abc{
+    width: 70px;
+    height: 70px;
+    border-radius: 100%;
+    margin: 10px;
+    margin-bottom: 10px;
+    background-color: rgb(10, 175, 216);
+    font-size: 30px;
+    line-height: 50px;
+    border: 4px solid black;
+    text-align: center;
+    -webkit-box-shadow: 2px 2px 2px 2px  #2520205d;
+    box-shadow: 2px 2px 2px 2px #2520205d;
+    color: white;
+    position: relative;
+}
+img{
+    height: 300px;
+    width: 390px;
+    /* border: 1px solid red; */
+    margin: 0;
+}
+#codigo{
+    border: 1px solid black;
+    width: 50px;
+    height: 25px;
+  
+    text-align: center;
+    line-height: 25px;
+    position: relative;
+    top: -324px;
+ 
 }

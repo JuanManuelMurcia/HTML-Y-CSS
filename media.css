@@ -1,0 +1,22 @@
+@media(max-width: 380px){
+    #products{
+        margin: 0;
+        justify-content: center;
+   
+    }
+    #shop{
+        position: absolute;
+        z-index: 100000;
+        width: 100%;
+        right: 0;
+        height: calc(100% -4rem);
+        visibility: hidden;
+    }
+    #index{
+        display: none;
+    }
+    #search{
+        width: 50%;
+    }
+    
+}
